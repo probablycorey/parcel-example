@@ -1,3 +1,5 @@
 import moment from 'moment'
+import hello from './hello.js'
 
-console.log(moment().format('LTS'))
+let element = document.querySelector('#my-content')
+element.textContent = hello() + moment().format('LTS')
